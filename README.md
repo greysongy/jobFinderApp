@@ -14,4 +14,4 @@ html, css, javascript, jquery, animate.css, bootstrap, Google Fonts, npm, expres
 
 #### Additional Notes
 
-The back-end (copmanies/ratings) is being continuously updated
+The back-end (companies/ratings) is being continuously updated
