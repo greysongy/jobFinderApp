@@ -10,18 +10,22 @@
 
   <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <title>Document</title>
 </head>
 
 <style>
   body {
     /* background-color: #E8E8E8; */
-    background-color: #8730a7;
+    /* background-color: #8730a7; */
+    /* background-color: #98ff98; */
+    background-image: linear-gradient(to right, #98FB98, #0d98ba);
     background-size: cover;
   }
 
   #header {
-    color: #8730a7;
+    /* color: #8730a7; */
+    color: #0d98ba;
     border-radius: 25px;
   }
 
@@ -51,6 +55,25 @@
   #input {
     font-size: 35px;
   }
+
+  #submit {
+    background-color: #E8E8E8 !important;
+    color: black !important;
+    width: 300px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 35px;
+  }
+
+  .modal {
+    /* width: 200px; */
+  }
+
+   .anton2 {
+    font-family: 'Anton', sans-serif;
+    color: black;
+    font-size: 40px;
+   }
 </style>
 
 <body>
@@ -93,9 +116,15 @@
     </div>
   </div> -->
 
-  <div class="container surveyRow mt-4 d-flex justify-content-center">
+  <div class="container surveyRow mt-4 d-flex justify-content-center animated zoomIn">
+      <div class="col-md-11 mt-2 d-flex justify-content-center">
+        <h1 class="anton" id="input">1: Strongly Disagree --> 5: Strongly Agree</h1>
+      </div>
+    </div>
+
+  <div class="container surveyRow mt-4 d-flex justify-content-center animated zoomIn">
     <div class="col-md-1 mt-2">
-      <h1 class="anton" id = "input">Name:</h1>
+      <h1 class="anton" id="input">Name:</h1>
     </div>
     <div class="col-md-10">
       <div class="form-group">
@@ -104,37 +133,157 @@
     </div>
   </div>
 
-  <div class="container surveyRow mt-4 d-flex justify-content-center">
+  <div class="container surveyRow mt-4 d-flex justify-content-center animated zoomIn">
     <div class="col-md-9 mt-2">
-      <h1 class="anton" id = "input">I'd be excited to work at a startup</h1>
+      <h1 class="anton" id="input">I'd be excited to work at a startup</h1>
     </div>
     <div class="col-md-2">
-        <select id="choice1" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
+      <select id="choice1" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
     </div>
   </div>
 
-  <div class="container surveyRow mt-4 d-flex justify-content-center">
-      <div class="col-md-9 mt-2">
-        <h1 class="anton" id = "input">I'd be excited to work at a large company</h1>
-      </div>
-      <div class="col-md-2">
-          <select id="choice2" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-      </div>
+  <div class="container surveyRow mt-4 d-flex justify-content-center animated zoomIn">
+    <div class="col-md-9 mt-2">
+      <h1 class="anton" id="input">I'd be excited to work at a large company</h1>
     </div>
+    <div class="col-md-2">
+      <select id="choice2" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
 
-  <div class="form-group">
+  <div class="container surveyRow mt-4 d-flex justify-content-center animated zoomIn">
+    <div class="col-md-9 mt-2">
+      <h1 class="anton" id="input">I'd be excited to work at a tech company</h1>
+    </div>
+    <div class="col-md-2">
+      <select id="choice3" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container surveyRow mt-4 d-flex justify-content-center animated zoomIn">
+    <div class="col-md-9 mt-2">
+      <h1 class="anton" id="input">I'd be excited to work at a finance company</h1>
+    </div>
+    <div class="col-md-2">
+      <select id="choice4" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container surveyRow mt-4 d-flex justify-content-center animated zoomIn">
+    <div class="col-md-9 mt-2">
+      <h1 class="anton" id="input">I'd be excited to work at a nonprofit</h1>
+    </div>
+    <div class="col-md-2">
+      <select id="choice5" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container surveyRow mt-4 d-flex justify-content-center animated zoomIn">
+    <div class="col-md-9 mt-2">
+      <h1 class="anton" id="input">I want equity wherever I work</h1>
+    </div>
+    <div class="col-md-2">
+      <select id="choice6" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container surveyRow mt-4 d-flex justify-content-center animated zoomIn">
+    <div class="col-md-9 mt-2">
+      <h1 class="anton" id="input">I hate asking for a go-ahead</h1>
+    </div>
+    <div class="col-md-2">
+      <select id="choice7" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container surveyRow mt-4 d-flex justify-content-center animated zoomIn">
+    <div class="col-md-9 mt-2">
+      <h1 class="anton" id="input">I worry if my employer is under public scrutiny</h1>
+    </div>
+    <div class="col-md-2">
+      <select id="choice8" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container surveyRow mt-4 d-flex justify-content-center animated zoomIn">
+    <div class="col-md-9 mt-2">
+      <h1 class="anton" id="input">I love free perks</h1>
+    </div>
+    <div class="col-md-2">
+      <select id="choice9" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container surveyRow mt-4 d-flex justify-content-center animated zoomIn">
+    <div class="col-md-9 mt-2">
+      <h1 class="anton" id="input">I prefer a traditional 9-5</h1>
+    </div>
+    <div class="col-md-2">
+      <select id="choice10" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- <div class="form-group">
     <label for="exampleFormControlTextarea1">Name</label>
     <textarea class="form-control" id="name" rows="1"></textarea>
   </div>
@@ -221,8 +370,39 @@
     <option>3</option>
     <option>4</option>
     <option>5</option>
-  </select>
-  <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+  </select> -->
+  <div class="col-md-12 d-flex justify-content-center mt-4">
+    <button type="submit" id="submit" class="btn btn-primary anton">Find a Match</button>
+  </div>
+  <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title anton">Sucessful Match!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class = "row">
+          <div class="col-md-4">
+            <img id = "logo" src="">
+          </div>
+          <div class = "col-md-7">
+            <h1 id = "firmName" class = "anton2"></h1>
+            </div>
+          </div>
+          <!-- <div class="col-md-6">
+            <p class = "anton">Our goal is to organize the world's information and make it universally accessible and useful.</p>
+          </div> -->
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -236,21 +416,22 @@
       event.preventDefault();
       var newPerson = {
         name: $("#name").val().trim(),
-        photo: $("#headshot").val().trim(),
         scores: [$("#choice1").val(), $("#choice2").val(), $("#choice3").val(), $("#choice4").val(), $("#choice5").val(), $("#choice6").val(), $("#choice7").val(), $("#choice8").val(), $("#choice9").val(), $("#choice10").val()]
       };
       console.log("The post request should run immediately following this line");
       $.post("/api/people", newPerson,
         function (data) {
           console.log("The function after the post request was executed");
-          if (data) {
-            alert("Person was added to database");
-          }
-
+          console.log("Data");
+          console.log(data);
           $("#name").val("");
           $("#headshot").val("");
+          $("#logo").attr("src", "https://logo.clearbit.com/" + data.photo + "?size=100");
+          $("#firmName").text(data.name);
+          $(".modal").modal('show');
         });
     })
+
   </script>
 </body>
 
