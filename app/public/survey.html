@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+
+<style>
+  body {
+    /* background-color: #E8E8E8; */
+    background-color: #8730a7;
+    background-size: cover;
+  }
+
+  #header {
+    color: #8730a7;
+    border-radius: 25px;
+  }
+
+  #nav1 {
+    border-radius: 15px;
+    font-family: 'Anton', sans-serif;
+  }
+
+  #mainContainer {
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .anton {
+    font-family: 'Anton', sans-serif;
+    color: black;
+    font-size: 20px;
+  }
+
+  .surveyRow {
+    background-color: #E8E8E8;
+    color: black;
+    border-radius: 20px;
+    font-size: 50px;
+  }
+
+  #input {
+    font-size: 35px;
+  }
+</style>
+
+<body>
+  <div class=" col-md-12 container mt-4">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center border border-dark animated zoomIn"
+      id="nav1">
+      <a class="navbar-brand" href="#" id="header">Survey: Info --> Customized Match</a>
+      <!-- <img src="assets/images/blur-chart-data-69760.jpg"> -->
+    </nav>
+  </div>
+  <!-- <div class="col-md-12 justify-content-center">
+    <div class = "row">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-9 mt-4 mx-5 d-flex justify-content-center" id=mainContainer>
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="anton"> Enter your information and preferences to get paired with a company!</h1>
+        </div>
+        <div class = "row">
+            <table>
+                <tr class = "anton">
+                  Name
+                </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="container surveyRow mt-4 d-flex justify-content-center">
+    <div class="col-md-12 d-flex justify-content-center">
+      <h1 class="anton">Enter your information/preferences to get matched!</h1>
+    </div>
+  </div> -->
+
+  <div class="container surveyRow mt-4 d-flex justify-content-center">
+    <div class="col-md-1 mt-2">
+      <h1 class="anton" id = "input">Name:</h1>
+    </div>
+    <div class="col-md-10">
+      <div class="form-group">
+        <textarea class="form-control mt-2" id="name" rows="1"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="container surveyRow mt-4 d-flex justify-content-center">
+    <div class="col-md-9 mt-2">
+      <h1 class="anton" id = "input">I'd be excited to work at a startup</h1>
+    </div>
+    <div class="col-md-2">
+        <select id="choice1" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+    </div>
+  </div>
+
+  <div class="container surveyRow mt-4 d-flex justify-content-center">
+      <div class="col-md-9 mt-2">
+        <h1 class="anton" id = "input">I'd be excited to work at a large company</h1>
+      </div>
+      <div class="col-md-2">
+          <select id="choice2" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+      </div>
+    </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Name</label>
+    <textarea class="form-control" id="name" rows="1"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Headshot url</label>
+    <textarea class="form-control" id="headshot" rows="1"></textarea>
+  </div>
+  <h2>I'd be excited to work at a startup</h2>
+  <select id="choice1" class="form-control form-control-lg" placeholder="I'd be excited to work at a startup">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <h2>I'd be excited to work at a large company</h2>
+  <select id="choice2" class="form-control form-control-lg">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <h2>I'd be excited to work at a tech company</h2>
+  <select id="choice3" class="form-control form-control-lg">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <h2>I'd be exited to work at a finance company</h2>
+  <select id="choice4" class="form-control form-control-lg">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <h2>I'd be excited to work at a nonprofit</h2>
+  <select id="choice5" class="form-control form-control-lg">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <h2>I want equity in the company I'm working at</h2>
+  <select id="choice6" class="form-control form-control-lg">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <h2>I get irritated when projects that I'm working on require the go-ahead from a superior</h2>
+  <select id="choice7" class="form-control form-control-lg">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <h2>I'd prefer to work at a company not under public scrutiny</h2>>
+  <select id="choice8" class="form-control form-control-lg">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <h2>Free perks matter a lot to me</h2>
+  <select id="choice9" class="form-control form-control-lg">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <h2>I like regular 9-5 hours</h2>
+  <select id="choice10" class="form-control form-control-lg">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    // Wondering about the parameters of the post function
+    $("#submit").on("click", function (event) {
+      // console.log("Did we get here?");
+      event.preventDefault();
+      var newPerson = {
+        name: $("#name").val().trim(),
+        photo: $("#headshot").val().trim(),
+        scores: [$("#choice1").val(), $("#choice2").val(), $("#choice3").val(), $("#choice4").val(), $("#choice5").val(), $("#choice6").val(), $("#choice7").val(), $("#choice8").val(), $("#choice9").val(), $("#choice10").val()]
+      };
+      console.log("The post request should run immediately following this line");
+      $.post("/api/people", newPerson,
+        function (data) {
+          console.log("The function after the post request was executed");
+          if (data) {
+            alert("Person was added to database");
+          }
+
+          $("#name").val("");
+          $("#headshot").val("");
+        });
+    })
+  </script>
+</body>
+
+</html>
