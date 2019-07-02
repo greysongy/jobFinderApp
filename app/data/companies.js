@@ -55,11 +55,11 @@ var companyArray = [
         photo: "superhuman.com", 
         scores: [5, 2, 5, 3, 1, 4, 4, 4, 3, 2]
     }, 
-    {
-        name: "McKinsey", 
-        photo: "mckinsey.com", 
-        scores: [2, 5, 3, 5, 1, 1, 2, 3, 4, 2]
-    }, 
+    // {
+    //     name: "McKinsey", 
+    //     photo: "mckinsey.com", 
+    //     scores: [2, 5, 3, 5, 1, 1, 2, 3, 4, 2]
+    // }, 
     {
         name: "Goldman Sachs", 
         photo: "goldmansachs.com", 
